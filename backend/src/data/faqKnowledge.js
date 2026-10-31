@@ -1,0 +1,218 @@
+
+/**
+ * FAQ nghiệp vụ cho công ty giả định Máy móc Minh Phát.
+ * Dữ liệu chỉ phục vụ bài tập môn học, không đại diện cho doanh nghiệp có thật.
+ *
+ * Nguyên tắc:
+ * - Không tự tạo giá bán, tồn kho hoặc chính sách chưa được xác định.
+ * - Chỉ trả lời trong phạm vi nội dung được định nghĩa ở đây.
+ * - Nếu thiếu thông tin, hướng khách hàng đến bước tư vấn.
+ *
+ * Giữ nguyên cấu trúc patterns và suggestions để tương thích
+ * với backend hiện tại.
+ */
+
+export const faqKnowledge = [
+  {
+    id: "product-categories",
+    question: "Công ty kinh doanh những loại máy nào?",
+    answer:
+      "Theo danh mục sản phẩm giả định của Minh Phát, công ty cung cấp các nhóm máy gồm máy khoan bàn, máy tiện cơ khí, máy phay CNC và máy nén khí công nghiệp. Bạn có thể cho biết nhu cầu sử dụng để được hướng dẫn tìm hiểu nhóm máy phù hợp.",
+    patterns: [
+      "cong ty kinh doanh nhung loai may nao",
+      "cong ty ban may gi",
+      "co nhung loai may nao",
+      "danh muc san pham",
+      "cac loai may moc",
+      "minh phat ban nhung gi"
+    ],
+    suggestions: [
+      "Tôi nên chọn máy nào cho xưởng cơ khí?",
+      "Tôi có thể xem thông số kỹ thuật ở đâu?",
+      "Tôi muốn mua nhiều máy thì làm thế nào?"
+    ]
+  },
+  {
+    id: "machine-selection",
+    question: "Tôi nên chọn máy nào cho xưởng cơ khí?",
+    answer:
+      "Để lựa chọn máy phù hợp, bạn nên xác định công việc cần thực hiện, loại vật liệu gia công, quy mô sản xuất và ngân sách dự kiến. Bạn có thể cung cấp thêm các thông tin này hoặc đặt lịch tư vấn để được hỗ trợ lựa chọn. Chatbot chưa có đủ dữ liệu kỹ thuật để khẳng định một mẫu máy cụ thể là phù hợp.",
+    patterns: [
+      "toi nen chon may nao cho xuong co khi",
+      "chon may cho xuong co khi",
+      "nen mua loai may nao",
+      "tu van chon may",
+      "may nao phu hop voi nhu cau",
+      "chon may theo nhu cau"
+    ],
+    suggestions: [
+      "Công ty kinh doanh những loại máy nào?",
+      "Tôi có thể xem thông số kỹ thuật ở đâu?",
+      "Tôi có thể đặt lịch tư vấn không?"
+    ]
+  },
+  {
+    id: "machine-pricing",
+    question: "Giá máy khoan bàn là bao nhiêu?",
+    answer:
+      "Hiện bộ dữ liệu mẫu chưa có bảng giá được xác thực cho máy khoan bàn. Chatbot không thể đưa ra mức giá cụ thể khi chưa có dữ liệu. Bạn có thể đăng ký lịch tư vấn để trao đổi về mẫu máy và nhu cầu báo giá.",
+    patterns: [
+      "gia may khoan ban la bao nhieu",
+      "may khoan ban gia bao nhieu",
+      "bao gia may khoan ban",
+      "gia may moc",
+      "gia san pham",
+      "bang gia may",
+      "chi phi mua may"
+    ],
+    suggestions: [
+      "Công ty kinh doanh những loại máy nào?",
+      "Tôi muốn mua nhiều máy thì làm thế nào?",
+      "Tôi có thể đặt lịch tư vấn không?"
+    ]
+  },
+  {
+    id: "machine-availability",
+    question: "Máy phay CNC hiện có sẵn không?",
+    answer:
+      "Bộ dữ liệu mẫu chưa có thông tin tồn kho được xác nhận của máy phay CNC. Vì vậy, chatbot chưa thể khẳng định sản phẩm còn hàng hay không. Bạn có thể đăng ký tư vấn để yêu cầu kiểm tra tình trạng sản phẩm.",
+    patterns: [
+      "may phay cnc hien co san khong",
+      "may phay cnc con hang khong",
+      "con hang khong",
+      "kiem tra ton kho",
+      "tinh trang san pham",
+      "may nay co san khong"
+    ],
+    suggestions: [
+      "Công ty kinh doanh những loại máy nào?",
+      "Giá máy khoan bàn là bao nhiêu?",
+      "Tôi có thể đặt lịch tư vấn không?"
+    ]
+  },
+  {
+    id: "technical-specifications",
+    question: "Tôi có thể xem thông số kỹ thuật ở đâu?",
+    answer:
+      "Thông số kỹ thuật cần được tra cứu theo từng mẫu máy và tài liệu tương ứng. Bộ dữ liệu mẫu hiện chưa có bảng thông số chi tiết cho từng sản phẩm, nên chatbot không tự đưa ra các thông số như công suất, tốc độ hoặc độ chính xác. Bạn có thể yêu cầu tư vấn về mẫu máy cụ thể.",
+    patterns: [
+      "toi co the xem thong so ky thuat o dau",
+      "thong so ky thuat cua may",
+      "thong so san pham",
+      "cong suat may bao nhieu",
+      "toc do may",
+      "do chinh xac cua may",
+      "tai lieu ky thuat"
+    ],
+    suggestions: [
+      "Công ty kinh doanh những loại máy nào?",
+      "Tôi nên chọn máy nào cho xưởng cơ khí?",
+      "Tôi có thể đặt lịch tư vấn không?"
+    ]
+  },
+  {
+    id: "warranty-policy",
+    question: "Công ty có bảo hành máy không?",
+    answer:
+      "Chính sách bảo hành của công ty giả định chưa được xác định trong bộ dữ liệu hiện tại. Chatbot chưa thể cam kết thời hạn hoặc điều kiện bảo hành. Bạn có thể yêu cầu tư vấn để làm rõ chính sách áp dụng cho sản phẩm quan tâm.",
+    patterns: [
+      "cong ty co bao hanh may khong",
+      "may co bao hanh khong",
+      "thoi han bao hanh",
+      "chinh sach bao hanh",
+      "bao hanh may moc",
+      "dieu kien bao hanh"
+    ],
+    suggestions: [
+      "Tôi có thể xem thông số kỹ thuật ở đâu?",
+      "Công ty có giao hàng không?",
+      "Tôi có thể đặt lịch tư vấn không?"
+    ]
+  },
+  {
+    id: "delivery-policy",
+    question: "Công ty có giao hàng không?",
+    answer:
+      "Bộ dữ liệu mẫu chưa xác định phạm vi giao hàng, phí vận chuyển hoặc thời gian giao máy. Chatbot không thể cam kết các điều kiện này khi chưa có thông tin. Bạn có thể đăng ký tư vấn để trao đổi về nhu cầu nhận hàng.",
+    patterns: [
+      "cong ty co giao hang khong",
+      "co giao may khong",
+      "phi van chuyen",
+      "thoi gian giao hang",
+      "chinh sach giao hang",
+      "giao may den dia chi",
+      "van chuyen may moc"
+    ],
+    suggestions: [
+      "Giá máy khoan bàn là bao nhiêu?",
+      "Công ty có bảo hành máy không?",
+      "Tôi có thể đặt lịch tư vấn không?"
+    ]
+  },
+  {
+    id: "bulk-purchase",
+    question: "Tôi muốn mua nhiều máy thì làm thế nào?",
+    answer:
+      "Nếu có nhu cầu mua nhiều máy, bạn nên chuẩn bị danh sách sản phẩm, số lượng dự kiến và mục đích sử dụng. Nhân viên tư vấn có thể trao đổi thêm về nhu cầu của bạn. Bộ dữ liệu mẫu chưa có chính sách chiết khấu hoặc giá bán số lượng lớn được xác nhận.",
+    patterns: [
+      "toi muon mua nhieu may thi lam the nao",
+      "mua nhieu may",
+      "mua so luong lon",
+      "mua may cho nha xuong",
+      "mua nhieu thiet bi",
+      "chinh sach mua si",
+      "chiet khau khi mua nhieu"
+    ],
+    suggestions: [
+      "Công ty kinh doanh những loại máy nào?",
+      "Giá máy khoan bàn là bao nhiêu?",
+      "Tôi có thể đặt lịch tư vấn không?"
+    ]
+  },
+  {
+    id: "consultation-booking",
+    question: "Tôi có thể đặt lịch tư vấn không?",
+    answer:
+      "Bạn có thể đăng ký lịch tư vấn trên ứng dụng demo. Biểu mẫu dự kiến thu thập họ tên, số điện thoại, ngày và giờ tư vấn. Việc lưu thông tin trên ứng dụng demo không đồng nghĩa với việc lịch đã được nhân viên xác nhận.",
+    patterns: [
+      "toi co the dat lich tu van khong",
+      "dat lich tu van",
+      "dang ky lich tu van",
+      "hen lich tu van",
+      "muon duoc tu van",
+      "lien he de tu van",
+      "dat hen mua may"
+    ],
+    suggestions: [
+      "Tôi nên chuẩn bị gì trước khi tư vấn?",
+      "Tôi nên chọn máy nào cho xưởng cơ khí?",
+      "Tôi muốn mua nhiều máy thì làm thế nào?"
+    ]
+  },
+  {
+    id: "consultation-preparation",
+    question: "Tôi nên chuẩn bị gì trước khi tư vấn?",
+    answer:
+      "Để buổi tư vấn hiệu quả hơn, bạn nên chuẩn bị mục đích sử dụng máy, loại vật liệu cần gia công, quy mô sản xuất, số lượng máy và ngân sách dự kiến nếu đã xác định. Đây là các thông tin giúp làm rõ nhu cầu, không phải điều kiện bắt buộc để gửi yêu cầu tư vấn.",
+    patterns: [
+      "toi nen chuan bi gi truoc khi tu van",
+      "can chuan bi gi khi tu van",
+      "thong tin can co khi mua may",
+      "tu van mua may can gi",
+      "can cung cap thong tin gi",
+      "chuan bi mua may moc"
+    ],
+    suggestions: [
+      "Tôi nên chọn máy nào cho xưởng cơ khí?",
+      "Tôi muốn mua nhiều máy thì làm thế nào?",
+      "Tôi có thể đặt lịch tư vấn không?"
+    ]
+  }
+];
+
+export const defaultSuggestions = [
+  "Công ty kinh doanh những loại máy nào?",
+  "Giá máy khoan bàn là bao nhiêu?",
+  "Tôi có thể đặt lịch tư vấn không?"
+];
+
